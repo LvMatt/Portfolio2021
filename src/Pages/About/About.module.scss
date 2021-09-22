@@ -1,0 +1,173 @@
+@import "../../util/colors.scss" ;
+
+.AboutWrapper{
+    color: white;
+    background-color: $dark_blue;
+    position: relative;
+
+    .Headline{
+        position: relative;
+        margin-top: 125px;
+        margin-bottom: 36px;
+        width: 278px;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 72px;
+        line-height: 73px;
+        letter-spacing: 0em;
+        z-index: 9999;
+    }
+
+    .ContentSection{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .TextSection{
+        font-size: 24px;
+        line-height: 33px;
+        // width: 842px;
+    }
+
+    .HeadlineSection{
+        position: relative;
+    }
+
+    .ButtonSection{
+        display: flex;
+        margin-top: 43px;
+        justify-content: center;
+    }
+
+    button{
+        background-color: $orange1;
+        width: 276px;
+        height: 75px;       
+        border-color:transparent;
+        border-radius: 40px ;
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 38px;
+        letter-spacing: 0em;
+        text-align: center;
+
+    }
+
+    .TimelineWrapper{
+        position: relative;
+        img:hover{
+            height: auto + 100px;
+        }
+        .Comp3Img{
+            position: absolute;
+            bottom: 60px;
+            top: 30px;
+            right: 120px;
+        }
+
+        .Comp2Img{
+            position: absolute;
+            top: 220px;
+            left: 250px;
+        }
+        .Comp1Img{
+            position: absolute;
+            bottom: 60px;
+            left: 50px;
+        }
+        
+    }
+
+    .BarWrapper{
+        
+        .BarText{
+            margin-bottom: 5px;
+            position: relative;
+        }
+
+        .Bar{
+            margin-bottom: 5px;
+            [role=progressbar]{
+                background-color: $orange1;
+            }
+            
+        }
+
+        
+    }
+
+    .BlueCircle{
+        z-index: 2;
+        top: -35px;
+        left: 180px;
+        position: absolute;
+        height: 156px;
+        width: 160px;
+        background-color: $light_blue;
+        border-radius: 100%;
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+
+
+    .AboutWrapper{
+        height: auto;
+
+        .TimelineWrapper{
+            display: none;
+        }
+        .Headline{
+            margin-top: 0;
+            font-size: 60px;
+            width: 137px;
+            line-height: 60.43px;
+        }
+        .ContentSection{
+           margin: 0px 20px;
+        }
+        .TextSection{
+            font-size: 18px;
+            line-height: 24.51px;
+            width: 100%
+        }
+        .HeadlineSection{
+            margin-top: 40px;
+            position: relative;
+            margin-bottom: 16px;
+        }
+    
+        .BarWrapper{
+            .BarText{
+                margin-bottom: 5px;
+                position: relative;
+            }
+    
+            .Bar{
+                margin-bottom: 5px;
+            }
+        }
+    
+        .BlueCircle{
+           display: none;
+        }
+    }
+
+}
+
+@media screen and (max-width: 568px) {
+    .AboutWrapper{
+       
+        .Headline{
+            margin-top: 0;
+            font-size: 36px;
+            width: 137px;
+            line-height: 36.43px;
+        }
+
+        .HeadlineSection{
+            margin-top: 0;
+        }
+    }
+}

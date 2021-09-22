@@ -1,0 +1,143 @@
+
+.Container{
+    nav{
+        padding: 0;
+        z-index: 999999999;
+        float: right;
+        width: 100%;
+        display: flex;
+        justify-content: right;
+        
+        ul{
+            padding-right: 100px;
+            padding-top: 10px;
+           list-style: none;
+           li{
+                display: inline;
+                padding-left: 100px;
+
+                a{
+                    text-decoration: none;  
+                    color: white;
+                    font-size: 30px;
+                    line-height: 41px;
+                }
+            }
+        }
+      
+        ul li a:hover{
+            color: #F95F2A ;
+        }
+
+        .IconTimes{display: none;}
+        .IconBars{
+            color: white;
+            font-size: 46px;
+            display:  none;
+            position: absolute;
+            right:    0;
+            top:      0;
+        }
+    }
+    .NavbarContent{
+        display: inline;
+        position: relative;
+    }
+   /*  .OrangeBox{
+        line-height: 0px;
+        clear: right;
+        padding: 0;
+        margin-left: 0 !important;
+        background-color: #F95F2A;
+        padding: 10px;
+        width: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    } */
+
+    @media screen and (max-width: 968px) {
+        nav{
+            ul li a:hover{
+                color: #000 ;
+            }
+
+            ul li a:active{
+                color: #000 ;
+            }
+
+            ul{
+                display: none;
+                margin-right: 150px;
+               li{
+                   clear: both;
+                    display: block;
+                    padding: 0;
+                    a{
+                        float:none;
+                        display:block;
+                        text-align: left;
+                    }
+
+                }
+
+              
+            }
+            .Active{
+                z-index: 9999999;
+                display: block;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                background-color: #F95F2A;
+                padding: 20px 60px;
+                margin-right: 50px;
+                top: 0;
+                border-radius: 20%;
+                li{
+                    text-align: center;
+                    padding-top: 15px;
+
+                    a{
+                        display:block;
+                    }
+                }
+
+                li:last-child{
+                   padding-bottom: 15px;
+                }
+            }
+
+            ul li a:hover{
+                color: #F95F2A ;
+            }
+            .IconTimes{
+                position: absolute;
+                right: 30px;
+                top: 20px;
+                display: block;
+                font-size: 24px;
+                float: right;
+            }
+            .IconBars{
+                margin-top:10px;
+                color: white;
+                font-size: 46px;
+                display:  block;
+                z-index: 99999;
+         
+            }
+        }
+        .NavbarContent{
+            display: inline;
+            right: 20px;
+            position: absolute;
+        }
+
+        .OrangeBox{
+            display: none;
+        }
+    }
+}
+
+

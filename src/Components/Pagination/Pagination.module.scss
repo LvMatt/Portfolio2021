@@ -1,0 +1,62 @@
+@import "../../util/colors.scss" ;
+
+.Container{
+    position: absolute;
+    margin-top: 244px;
+    right: 0;
+    .PaginationSection{
+        position: relative;
+        top: 0;
+        .BlueCircle{
+            top: -79px;
+            left: -45px;
+            position: absolute;
+            width: 125px;
+            height: 123px;
+            background: $light_blue;
+            border-radius: 50%;
+        }
+        ul{
+            position: relative;
+            list-style-type: none;
+            color: #2A4C83;
+            font-size: 24px;
+            line-height: 160.68%;
+            text-align: center;
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: normal;
+        }
+        .BorderSlash{
+            height: 2px;
+            background-color: $light_blue;
+            width: 100%;
+            text-align: center;
+        }
+        a.Active{
+            color: white;
+        }
+        a.Active:hover{
+            color: #2A4C83;
+        }
+        a{
+            color:#2A4C83;
+            text-decoration: none;
+        }
+
+        a:hover{
+            color:#ffffff;
+        }
+
+     
+    }
+}
+
+
+@media screen and (max-width: 968px) {
+    .Container{
+        .PaginationSection{
+            display: none;
+            }
+    }
+}

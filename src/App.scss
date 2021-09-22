@@ -1,0 +1,23 @@
+@import "./util/colors.scss" ;
+
+h1{
+  font-style: normal ;
+  font-weight: 800;
+  font-size: 72px ;
+  line-height: 73px;
+  letter-spacing: 0em ;
+}
+
+.active{
+  width: 100%;
+  background-color: $orange1;
+  position: fixed;
+
+  li a:hover {
+    color: black !important;
+    }
+}
+@media screen and (max-width: 568px) {
+  
+}
+

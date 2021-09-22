@@ -1,0 +1,29 @@
+@import "../../util/colors.scss" ;
+body{
+    color : red;
+}
+
+.ButtonComp{
+    background-color: $orange1;
+    padding: 15px 40px;
+    border-color:transparent;
+    border-radius: 40px ;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+@media screen and (max-width: 576px) {
+    .ButtonComp{
+        margin-top: 30px;
+        float: left;
+        padding: 10px 15px;
+        border-radius: 40px ;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 19px;
+        text-align: center;
+    }
+}

@@ -1,0 +1,379 @@
+@import "../../util/colors.scss" ;
+
+.WorkText::before{
+    content: 'Full-stack developer';
+    animation: text infinite 8s;  
+    transition-timing-function: ease;
+    animation-timing-function: ease;
+}
+
+/* @keyframes text {
+    from {left: 0px;}
+    to {left: 300px;}
+    0% {
+        content: 'Full-stack developer';
+    }
+    25% {
+        content: 'Backend developer';
+    }
+    50% {
+        content: 'Frontend developer';
+    }
+    75% {
+        content: 'Dev ops analyst';
+    }
+
+}
+ */
+@keyframes pulse {
+    0% {
+      opacity: 1
+    }
+    50% {
+      opacity: 1
+    }
+    100% {
+      opacity: 0
+    }
+  }
+
+.Wrapper{
+    width: 100%;
+    height: auto;
+    background-color: $dark_blue;
+    color:#ffffff;
+    .ContentSection{
+        position: relative;
+        margin-left: 50px;
+        width: 100%;
+        margin-right: 50px;
+        .OrangeCircle{
+            width: 88px;
+            height: 84px;
+            background: $orange1;
+            border-radius: 50%;
+            position: absolute;
+            top: 67px;
+            left: 459px;
+        }
+        .BackgroundImage
+        {
+            width: auto;
+            height: auto;
+            top: 50%;
+            left: 50%;
+            position: absolute;
+            transform: translate(-50%, -50%);
+        }
+
+        .ContentTextSection
+        {
+            margin-top: 156px;
+            z-index: 999999;
+            position: relative;
+            h5.IntroText{
+                font-size: 36px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 49px;
+                letter-spacing: 0em;
+                text-align: left;
+            }
+            
+            h1.IntroName{
+                position: relative;
+                font-size: 96px;
+                font-style: normal;
+                font-weight: 900;
+                line-height: 97px;
+                letter-spacing: 0em;
+                text-align: left;
+            }
+            
+
+            h2.IntroWorkPosition{
+                color:  $orange1;
+                font-size: 48px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 65px;
+                letter-spacing: 0em;
+                text-align: left;
+
+            
+            }  
+
+            .IntroWorkPosition:after {
+                position:relative;
+                content:'';
+                width:1px;
+                border-right:2px solid white;
+                margin-left:7px;
+                height:5%;
+                transition: all 1s;
+                animation: pulse 400ms infinite ease;
+              }
+              
+        }
+        .ProfilePictureSection{
+            margin-top: 100px;
+            position: relative;
+            z-index: 9999;
+           .ProfilePictureWrapper{
+               position: relative;
+               z-index: 9999;
+                .ProfilePicture{
+                    max-height: 457px;
+                    z-index: 90099;
+                    width: auto;
+                    border-radius: 63%;
+                }
+            }
+            .OrangeCircleBig{
+                width: 178px;
+                height: 174px;
+                background: $orange1;
+                top: 50px;
+                left: 20px;
+                border-radius: 50%;
+                position: absolute;
+            }
+        }
+
+        .ButtonSection{
+            margin-top: 37px;
+            
+
+            .ProfilePictureIcon{
+               display: none;
+            }
+            button{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $orange1;
+                width: 276px;
+                height: 75px;                
+                border-color:transparent;
+                border-radius: 40px ;
+                font-size: 28px;
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+    .Wrapper{
+        .OrangeCircleBig{
+            display: none;
+        }
+        .ContentSection{
+            position: relative;
+            margin-left: 0;
+            margin-right: 50px;
+            .BackgroundImage
+            {
+                display: none;
+            }
+           
+            .ContentTextSection
+            {
+                margin-top: 156px;
+                z-index: 999999;
+                position: relative;
+                h5.IntroText{
+                    font-size: 30px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: 49px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                }
+                
+                h1.IntroName{
+                    position: relative;
+                    font-size: 80px;
+                    font-style: normal;
+                    font-weight: 900;
+                    line-height: 85px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                }
+                
+    
+                h2.IntroWorkPosition{
+                    color:  $orange1;
+                    font-size: 40px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 40px;
+                    letter-spacing: 0em;
+                    text-align: left;
+    
+                
+                }  
+                .IntroWorkPosition:after {
+                    position:relative;
+                    content:'';
+                    width:1px;
+                    border-right:2px solid white;
+                    margin-left:7px;
+                    height:5%;
+                    transition: all 1s;
+                    animation: pulse 400ms infinite ease;
+                  }
+                  
+            }
+            .ProfilePictureSection{
+                margin-top: 100px;
+                position: relative;
+                z-index: 9999;
+                .ProfilePicture{
+                    height: 400px;
+                    z-index: 90099;
+                    width: auto;
+                    border-radius: 38%;
+                }
+            }
+            .ButtonSection{
+                margin-top: 37px;
+                
+    
+                .ProfilePictureIcon{
+                   display: none;
+                }
+                button{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: $orange1;
+                    width: 276px;
+                    height: 75px;                
+                    border-color:transparent;
+                    border-radius: 40px ;
+                    font-size: 28px;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 385px) {
+    .ProfilePictureIcon{
+        display: none !important;
+    }
+}
+
+
+@media screen and (max-width: 576px) {
+    .Wrapper{
+        width: 100%;
+        height: 400px;
+        background-color: $dark_blue;
+        color:#ffffff;
+        
+        .ContentSection{
+            margin: 0px;
+            display: flex;
+            float: left;
+            flex-direction: column;
+            .OrangeCircle{
+                display: none;
+             
+            }
+        
+            .BackgroundImage
+            {
+                display: none;
+            }
+        
+            .ContentTextSection
+            {
+                margin-left: 0;
+                margin-top: 40px;
+                padding: 0 28px;
+                z-index: 999999;
+                position: relative;
+                text-align: left;
+
+                h5.IntroText{
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: 22px;
+                    letter-spacing: 0em;
+                }
+                
+                h1.IntroName{
+                    position: relative;
+                    font-size: 48px;
+                    font-style: normal;
+                    font-weight: 800;
+                    line-height: 54px;
+                    letter-spacing: 0em;
+                    
+                }
+        
+                h2.IntroWorkPosition{
+                    color:  $orange1;
+                    font-size: 18px;
+                    line-height: 25px;
+                    font-style: normal;
+                    font-weight: 400;
+                    letter-spacing: 0em;
+                }  
+            }
+           
+
+            .ProfilePictureSection{
+                position: absolute !important;
+                right: 0;
+                margin-top: 150px;
+                margin: 0;
+                padding: 0;
+                z-index: 9999;
+                .ProfilePicture{
+                    display: none;
+                   /*  margin-right: 30px;
+                    position: relative;
+                    max-height: 200px;
+                    z-index: 90099;
+                    width: auto;
+                    border-radius: 38%; */
+                }
+            }
+            .ButtonSection{
+                position: absolute;
+                display: inline;
+                margin-left: 28px;
+                margin-top: 5px;
+                .ProfilePictureIcon{
+                    float: right;
+                    display: inline; 
+                    position: relative;
+                    margin-bottom: 100px;
+                    max-height: 170px;
+                    width: 100%;
+                    z-index: 90099;
+                    width: auto;
+                    border-radius: 38%;
+                }
+                button{
+                    margin-top: 30px;
+                    float: left;
+                    width: 139px;
+                    height: 51px;                    
+                    border-radius: 40px ;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 19px;
+                    text-align: center;
+                    }
+                }
+            }
+        }
+  }
+

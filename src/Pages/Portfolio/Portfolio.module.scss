@@ -1,0 +1,234 @@
+@import "../../util/colors.scss" ;
+
+.PortfolioWrapper{
+    color: white;
+    background-color: $dark_blue;
+    position: relative;
+
+    .ContentSection{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .HeadlineSection{
+        margin-top: 100px;
+        position: relative;
+        .Headline{
+            position: relative;
+            font-size: 72px;
+            font-weight: 800;
+            line-height: 73px;
+            z-index: 99;
+            letter-spacing: 0em;
+            text-align: left;
+        }
+        .OrangeCircle{
+            position: absolute;
+            z-index: 2;
+            top: -35px;
+            left: -30px;
+            position: absolute;
+            height: 130px;
+            width: 135px;
+            background-color: $orange1;
+            border-radius: 100%;
+        }
+    }
+
+    .PortfolioCardsWrapper{
+        margin-top: 50px;
+        .PortfolioRectangle{
+            padding: 100px;
+            border-radius: 45px;
+            background-color: #C4C4C4;
+        }
+
+        .CardWrapper{
+            background-color: transparent;
+            border: none;
+            margin-bottom: 50px;
+        }
+        .ButtonCheck{
+            width: 219px;
+            height: 75px;
+            border: 2px solid #FFFFFF;
+            box-sizing: border-box;
+            border-radius: 45px;
+            background-color: transparent;
+            font-size: 20px;
+
+        }
+
+        .CardContentSection{
+            padding-top: 0;
+            .CardTitle{
+                font-size: 36px;
+                font-weight: 800;
+            }
+            .CardText{
+                font-weight: normal;
+                font-size: 24px;
+                line-height: 33px;
+            }
+
+            .BlueCircle{
+                position: absolute;
+                z-index: 2;
+                top: -65px;
+                left: 120px;
+                position: absolute;
+                width: 226px;
+                height: 224px;
+                background-color: $light_blue;
+                border-radius: 100%;
+            }
+        }
+        .CardContentSectionLeft{
+            padding-left: 200px;
+            margin-right: 20px;
+            text-align: right;
+        }
+        .CardContentSectionRight{
+            padding-right: 200px;
+            text-align: left;
+        }
+
+    }
+
+    .ButtonMain{
+        background-color: $orange1;
+        padding: 15px 40px;
+        border-color:transparent;
+        border-radius: 40px ;
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 38px;
+        letter-spacing: 0em;
+        text-align: center;
+    }
+
+    .ButtonWrapper{
+        text-align: center;
+    }
+    
+}
+
+@media screen and (max-width: 992px) {
+    .PortfolioWrapper{
+        height: auto;
+        color: white;
+        background-color: $dark_blue;
+        position: relative;
+
+       
+    .ContentSection{
+        margin-left:20px;
+        margin-right: 20px;
+    }
+        
+        .HeadlineSection{
+            .Headline{
+                font-size: 60px;
+                font-weight: 800;
+                line-height: 60px;
+                z-index: 99;
+            }
+            .OrangeCircle{
+                position: absolute;
+                z-index: 2;
+                top: -35px;
+                left: -30px;
+                position: absolute;
+                width: 80px;
+                height: 79px;
+                background-color: $orange1;
+                border-radius: 100%;
+            }
+        }
+    
+        .PortfolioCardsWrapper{
+            margin-top: 36px;
+            .PortfolioRectangleWrapper{
+                display: flex;
+                justify-content: center;
+            .PortfolioRectangle{
+                margin: 0;
+                
+                padding: 120px;
+                width: auto;
+                border-radius: 45px;
+            }
+            }
+            .CardWrapper{
+                border: none;
+                margin-bottom: 50px;
+                .CardLeft{
+                    display: flex;
+                    flex-direction: column-reverse;
+                }
+            }
+            .ButtonCheck{
+                width: 219px;
+                height: 75px;
+                border: 2px solid #FFFFFF;
+                box-sizing: border-box;
+                border-radius: 45px;
+                background-color: transparent;
+            }
+    
+            .CardContentSection{
+                margin-top: 28px;
+                padding-top: 0;
+                .CardTitle{
+                    font-size: 24px;
+                    font-weight: 800;
+                    text-align: center;
+                    line-height: 24.28px;
+                    margin-bottom: 14px;
+                }
+                .CardText{
+                    font-weight: normal;
+                    font-size: 18px;
+                    line-height: 24.51px;
+                    margin-bottom: 27px;
+                }
+            }
+            .CardContentSectionLeft{
+                padding-left: 0;
+                margin-right: 0;
+                text-align: left;
+            }
+            .CardContentSectionRight{
+                padding-right: 0;
+                text-align: left;
+            }
+    
+        }
+    
+        .ButtonMain{
+            background-color: $orange1;
+            padding: 15px 40px;
+            border-color:transparent;
+            border-radius: 40px ;
+            font-size: 28px;
+            font-weight: 400;
+            line-height: 38px;
+            letter-spacing: 0em;
+            text-align: center;
+        }
+    
+        .ButtonWrapper{
+            text-align: center;
+        }
+    }
+    
+  }
+@media screen and (max-width: 568px) {
+    .PortfolioWrapper{
+        .HeadlineSection{
+            .Headline{
+                font-size: 36px;
+                line-height: 36px;
+            }
+        }
+    }
+}
