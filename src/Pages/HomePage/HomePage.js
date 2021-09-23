@@ -10,7 +10,7 @@ import ButtonComp from '../../Components/Button/ButtonComp';
 import Pagination from '../../Components/Pagination/Pagination';
 import BackgroundImage from '../../img/background_picture.png'
 const HomePage = (props) => {
-    useEffect(() => {
+    /* useEffect(() => {
         const words = ['Back-end developer', 'C# developer', 'Front-end developer', 'Full-stack developer', ]
         let count = 0;
         let index = 0;
@@ -29,12 +29,11 @@ const HomePage = (props) => {
           count++
           index = 0
         }
-        
         setTimeout(writing, 200)
         }())
         
       });
-   
+    */
     return (
     <div className={style.Wrapper}>
 {/*             <Navigation toggle={toggle} isOpen={isOpen}/>
