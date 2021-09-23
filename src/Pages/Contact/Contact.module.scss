@@ -135,9 +135,7 @@
             }
         }
 
-        .MailWrapper{
-            @extend .PhoneWrapper;
-        }
+        
 
     }
 
@@ -263,10 +261,6 @@
                     line-height: 24.51px;
  
                 }
-            }
-    
-            .MailWrapper{
-                @extend .PhoneWrapper;
             }
         }
     }

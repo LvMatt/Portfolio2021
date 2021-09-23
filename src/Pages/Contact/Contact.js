@@ -71,7 +71,7 @@ const Contact = (props) => {
                                 <FontAwesomeIcon className={style.IconBars} icon={faPhone} />
                                 <h4>+45 50 15 73 83</h4>
                             </div>
-                            <div className={style.MailWrapper}>
+                            <div className={style.PhoneWrapper}>
                                 <FontAwesomeIcon className={style.IconBars} icon={faMailBulk} />
                                 <h4>mato.kalanin@gmail.com</h4>
                             </div>
