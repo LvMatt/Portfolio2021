@@ -1,0 +1,49 @@
+@import "../../util/colors.scss" ;
+
+.UnderConstructionWrapper{
+   height: 100vh;
+   width: 100%;
+   color: white;
+   background-color: $dark_blue;
+   display: flex;
+   align-items: center;
+
+
+   h2{
+       text-align: center;
+   }
+
+   button{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: $orange1;
+    width: 276px;
+    height: 75px;                
+    border-color:transparent;
+    border-radius: 40px ;
+    font-size: 28px;
+    font-weight: 400;
+}
+    a{
+        color: white;
+        text-decoration: none;
+    }
+
+button:hover{
+    background-color: grey;
+}
+
+   .UnderConstructionSection{
+    display: flex;
+    align-items: center;
+   }
+}
+
+@media screen and (max-width: 992px) {
+    .UnderConstructionWrapper{
+
+  }
+}
+

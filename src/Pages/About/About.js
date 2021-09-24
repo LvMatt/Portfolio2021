@@ -28,10 +28,10 @@ const About = (props) => {
                     <Col lg="8" md="12">
                         <div className={style.TextSection}>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quam sapien id ut amet. Lobortis sodales auctor cras nullam eget viverra eu scelerisque. 
+                                Hello, I am Matus, programmer based in Copenhagen, Denmark. I have been solving technical issues, creating my own applications and websites for over 4 years.
                             </p>
                             <p>
-                                Lobortis sodales auctor cras nullam eget viverra eu scelerisque. Congue eu vulputate at odio. In laoreet diam volutpat viverra convallis.
+                                As a full-stack developer, I have an experience in variety technologies. 
                             </p>
                         </div>
                     </Col>
@@ -39,28 +39,40 @@ const About = (props) => {
                         <Col sm="12" lg="12" lg="4">
                             <div className={style.SkillSection}>
                                 <div className={style.BarWrapper}>
-                                    <div className={style.BarText}>Lorem</div>
-                                    <Progress className={style.Bar} value="75" />
+                                    <div className={style.BarText}>Asp.Net</div>
+                                    <Progress animated className={style.Bar} value="80" />
                                 </div>
 
                                 <div className={style.BarWrapper}>
-                                    <div className={style.BarText}>Lorem</div>
-                                    <Progress  className={style.Bar}value="94" />
+                                    <div className={style.BarText}>HTML&CSS</div>
+                                    <Progress animated  className={style.Bar}value="94" />
                                 </div>
 
                                 <div className={style.BarWrapper}>
-                                    <div className={style.BarText}>Lorem</div>
-                                    <Progress className={style.Bar} value="50" />
+                                    <div className={style.BarText}>React</div>
+                                    <Progress animated className={style.Bar} value="90" />
                                 </div>
 
                                 <div className={style.BarWrapper}>
-                                    <div className={style.BarText}>Lorem</div>
-                                    <Progress className={style.Bar} value="66" />
+                                    <div className={style.BarText}>PHP (Laravel)</div>
+                                    <Progress animated className={style.Bar} value="55" />
                                 </div>
 
                                 <div className={style.BarWrapper}>
-                                    <div className={style.BarText}>Lorem</div>
-                                    <Progress className={style.Bar} value="87" />
+                                    <div className={style.BarText}>Node.Js</div>
+                                    <Progress animated className={style.Bar} value="60" />
+                                </div>
+                                <div className={style.BarWrapper}>
+                                    <div className={style.BarText}>Typescript</div>
+                                    <Progress animated className={style.Bar} value="80" />
+                                </div>
+                                <div className={style.BarWrapper}>
+                                    <div className={style.BarText}>Docker - Kubernetes</div>
+                                    <Progress animated className={style.Bar} value="60" />
+                                </div>
+                                <div className={style.BarWrapper}>
+                                    <div className={style.BarText}>SQL, NoSQL</div>
+                                    <Progress animated className={style.Bar} value="75" />
                                 </div>
                             </div>
                         </Col>

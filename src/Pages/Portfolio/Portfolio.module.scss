@@ -39,7 +39,11 @@
         .PortfolioRectangle{
             padding: 100px;
             border-radius: 45px;
-            background-color: #C4C4C4;
+            background-image: url("../../img/portfolio_pic1.PNG");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-size: 100;
         }
 
         .CardWrapper{
@@ -96,7 +100,8 @@
 
     .ButtonMain{
         background-color: $orange1;
-        padding: 15px 40px;
+        width: 276px;
+        height: 75px;       
         border-color:transparent;
         border-radius: 40px ;
         font-size: 28px;
@@ -152,11 +157,11 @@
                 justify-content: center;
             .PortfolioRectangle{
                 margin: 0;
-                
                 padding: 120px;
                 width: auto;
                 border-radius: 45px;
             }
+
             }
             .CardWrapper{
                 border: none;

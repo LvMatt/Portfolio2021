@@ -10,7 +10,7 @@ import ButtonComp from '../../Components/Button/ButtonComp';
 import Pagination from '../../Components/Pagination/Pagination';
 import BackgroundImage from '../../img/background_picture.png'
 const HomePage = (props) => {
-    /* useEffect(() => {
+    useEffect(() => {
         const words = ['Back-end developer', 'C# developer', 'Front-end developer', 'Full-stack developer', ]
         let count = 0;
         let index = 0;
@@ -21,9 +21,13 @@ const HomePage = (props) => {
           count = 0
         }
         currentText = words[count]
+        console.log(words.length)
         letter = currentText.slice(0, ++index)
         let write = document.querySelector('.HomePage_IntroWorkPosition__3kqt5')
-        write.textContent = letter
+        if(write)
+        {
+            write.textContent = letter
+        }
         
         if(letter.length === currentText.length){
           count++
@@ -33,7 +37,7 @@ const HomePage = (props) => {
         }())
         
       });
-    */
+   
     return (
     <div className={style.Wrapper}>
 {/*             <Navigation toggle={toggle} isOpen={isOpen}/>

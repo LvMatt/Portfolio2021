@@ -42,6 +42,8 @@
     .FormWrapper{
         input{
             height: 75px;
+            font-size: 30px;
+            padding: 15px;
             color: #ffff;
             background-color: transparent;
             border: 2px solid #FFFFFF;
@@ -73,16 +75,19 @@
         }
     
         button{
-            background-color: $orange1;
-            padding: 15px 40px;
-            border-color:transparent;
-            border-radius: 40px ;
-            font-size: 28px;
-            font-weight: 400;
-            line-height: 38px;
-            letter-spacing: 0em;
-            text-align: center;
-    
+        background-color: $orange1;
+        width: 276px;
+        height: 75px;       
+        border-color:transparent;
+        border-radius: 40px ;
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 38px;
+        letter-spacing: 0em;
+        text-align: center;
+        }
+        button:hover{
+            background-color: grey;
         }
     }
     .InformationWrapper{
@@ -113,6 +118,13 @@
                 display: flex;
                 gap: 20px;
                 padding-right: 16px;
+                a{
+                    text-decoration: none;
+                    color: white;
+                }
+                a:hover{
+                    color: #ececec;
+                }
                 svg{
                     font-size: 48px;
                 }

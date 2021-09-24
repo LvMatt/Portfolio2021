@@ -30,7 +30,7 @@ const Contact = (props) => {
                 <Row className={style.ContactContentWrapper}>
                     <Col>
                         <div className={style.FormWrapper}>
-                            <Form action="/">
+                            <Form action="/" method="POST">
                             <Row>
                                 <Col lg="12">
                                     <Input type="email" name="email" id="email" placeholder="E-mail" />
@@ -62,10 +62,9 @@ const Contact = (props) => {
                             <div className={style.InformationSection}>
                             <h5>Find me on</h5>
                             <div className={style.IconsWrapper}>
-                                <FontAwesomeIcon className={style.IconBars} icon={faGithub} />
-                                <FontAwesomeIcon className={style.IconBars} icon={faLinkedin} />
-                                <FontAwesomeIcon className={style.IconBars} icon={faInstagram} />
-
+                                <a href="https://github.com/LvMatt"><FontAwesomeIcon className={style.IconBars} icon={faGithub} /></a>
+                                <a href="https://www.linkedin.com/in/mat%C3%BA%C5%A1-kalanin/"><FontAwesomeIcon className={style.IconBars} icon={faLinkedin} /></a>
+                                <a href="https://www.instagram.com/lv.kalanin/"><FontAwesomeIcon className={style.IconBars} icon={faInstagram} /></a>
                             </div>
                             <div className={style.PhoneWrapper}>
                                 <FontAwesomeIcon className={style.IconBars} icon={faPhone} />

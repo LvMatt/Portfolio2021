@@ -8,6 +8,8 @@ import {
 import './App.scss'
 import AboutPageWrapper from './Wrappers/AboutPageWrapper';
 import HomePageWrapper from './Wrappers/HomePageWrapper';
+import PageUnderConstruction from './Pages/PageUnderConstruction/PageUnderConstruction';
+
 function App() {
   return (
     <div className={style.App}>
@@ -16,9 +18,13 @@ function App() {
           <Route path="/about">
             <AboutPageWrapper/>
           </Route>
+          <Route path="/error">
+            <PageUnderConstruction/>
+          </Route>
           <Route path="/">
             <HomePageWrapper/>
           </Route>
+         
         </Switch>
         </Router>
     </div>
