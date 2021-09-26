@@ -30,7 +30,7 @@ const Contact = (props) => {
                 <Row className={style.ContactContentWrapper}>
                     <Col>
                         <div className={style.FormWrapper}>
-                            <Form action="/" method="POST">
+                            <Form action="#contact" method="POST">
                             <Row>
                                 <Col lg="12">
                                     <Input type="email" name="email" id="email" placeholder="E-mail" />
@@ -47,7 +47,7 @@ const Contact = (props) => {
                                 </Col>
                                 <Col lg="12">
                                     <div className={style.ButtonSection}>
-                                        <Button>
+                                        <Button disabled type="submit" >
                                             Send
                                         </Button>
                                     </div>
