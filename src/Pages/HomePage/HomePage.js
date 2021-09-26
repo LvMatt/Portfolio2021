@@ -24,16 +24,10 @@ const HomePage = (props) => {
         currentText = words[count]
         letter = currentText.slice(0, ++index)
         let write = document.querySelector('.HomePage_IntroWorkPosition__3kqt5')
-        if(write)
-        {
-            write.textContent = letter
-            console.log(write)
-        }
-        
+        write.textContent = letter
         if(letter.length === currentText.length){
           count++
           index = 0
-          console.log("it works")
         }
         setTimeout(writing, 200)
         }())
