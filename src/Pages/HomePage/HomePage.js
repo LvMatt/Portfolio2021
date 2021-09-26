@@ -7,6 +7,7 @@ import {Row,
 import ProfileImage from '../../img/profile_picture.png';
 import Navigation from '../../Components/Navigation/Navigation';
 import ButtonComp from '../../Components/Button/ButtonComp';
+import CV from '../../img/MatusKalanin_CV.pdf';
 import Pagination from '../../Components/Pagination/Pagination';
 import BackgroundImage from '../../img/background_picture.png'
 const HomePage = (props) => {
@@ -40,8 +41,6 @@ const HomePage = (props) => {
    
     return (
     <div className={style.Wrapper}>
-{/*             <Navigation toggle={toggle} isOpen={isOpen}/>
- */}
         <Container>
         
             <Row className={style.ContentSection}>
@@ -65,8 +64,10 @@ const HomePage = (props) => {
                         </h2>
                     </div>
                         <div className={style.ButtonSection}>
-                            <Button>
+                            <Button >
+                                <a href={CV}>
                                 Download CV
+                                </a>
                             </Button>
                             <img className={style.ProfilePictureIcon}  
                             src={ProfileImage} alt="profile_picture">
