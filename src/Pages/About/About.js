@@ -153,13 +153,13 @@ const About = (props) => {
                             </div>
                         </Col>
                     </Row>
-                    <Col sm="12">
+                  {/*   <Col sm="12">
                         <div className={style.ButtonSection}>
                             <Button>
                                 Read more
                             </Button>
                         </div>
-                    </Col>
+                    </Col> */}
                 </Row>
             </div>
         </Container>

@@ -77,11 +77,11 @@ const Portfolio = (props) => {
                             </Card>
                         </Col>
                     </Row>
-                    <Row>
+                   {/*  <Row>
                         <Col className={style.ButtonWrapper}>
                             <Button className={style.ButtonMain}>Read More</Button>
                         </Col>
-                    </Row>
+                    </Row> */}
                 </div>
             </div>
         </Container>

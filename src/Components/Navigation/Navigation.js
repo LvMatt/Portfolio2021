@@ -50,10 +50,10 @@ const Navigation = (props) => {
                   <FontAwesomeIcon className={style.IconTimes} icon={faTimes} />
                 </li>
                 <li className={style.NavItem}>
-                  <a href="/about">About</a>
+                  <a href="#about">About</a>
                 </li>
               <li className={style.NavItem}>
-              <a href="/about">Portfolio</a>
+              <a href="#portfolio">Portfolio</a>
               </li>
               <li className={style.NavItem}>
                 <a href="#contact">Contact</a>
