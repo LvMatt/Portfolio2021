@@ -1,11 +1,11 @@
 @import "../../util/colors.scss" ;
 
-.WorkText::before{
+/* .WorkText::before{
     content: 'Full-stack developer';
     animation: text infinite 8s;  
     transition-timing-function: ease;
     animation-timing-function: ease;
-}
+} */
 
 /* @keyframes text {
     from {left: 0px;}
@@ -103,7 +103,7 @@
             
             }  
 
-            .IntroWorkPosition:after {
+        /*     .IntroWorkPosition:after {
                 position:relative;
                 content:'';
                 width:1px;
@@ -112,7 +112,7 @@
                 height:5%;
                 transition: all 1s;
                 animation: pulse 400ms infinite ease;
-              }
+              } */
               
         }
         .ProfilePictureSection{

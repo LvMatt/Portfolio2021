@@ -11,7 +11,7 @@ import CV from '../../img/MatusKalanin_CV.pdf';
 import Pagination from '../../Components/Pagination/Pagination';
 import BackgroundImage from '../../img/background_picture.png'
 const HomePage = (props) => {
-    useEffect(() => {
+   /*  useEffect(() => {
         const words = ['Back-end developer', 'C# developer', 'Front-end developer', 'Full-stack developer', ]
         let count = 0;
         let index = 0;
@@ -34,7 +34,7 @@ const HomePage = (props) => {
         setTimeout(writing, 200)
         }())
         
-      });
+      }); */
    
     return (
     <div className={style.Wrapper}>
