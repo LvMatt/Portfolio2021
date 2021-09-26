@@ -24,6 +24,8 @@ const HomePage = (props) => {
         currentText = words[count]
         letter = currentText.slice(0, ++index)
         let write = document.querySelector('.HomePage_IntroWorkPosition__3kqt5')
+        if(write == null)
+            return
         write.textContent = letter
         if(letter.length === currentText.length){
           count++
