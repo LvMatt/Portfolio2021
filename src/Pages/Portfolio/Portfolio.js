@@ -34,7 +34,7 @@ const Portfolio = (props) => {
                                 <Row className="no-gutters">
                                 <Col  lg="3" md="12">
                                 <div className={style.PortfolioRectangleWrapper}>
-                                <div className={style.PortfolioRectangle}></div>
+                                <div  className={` ${style.PortfolioRectangle} ${style.ImageRight} `}></div>
                                 </div>
                                     {/* <CardImg
                                     top
@@ -45,11 +45,10 @@ const Portfolio = (props) => {
                                 </Col>
                                 <Col lg="9">
                                     <CardBody className={`${style.CardContentSection} ${style.CardContentSectionRight}` }>
-                                    <CardTitle className={`${style.CardTitle} ${style.CardTitleRight}`}>Project #1</CardTitle>
+                                    <CardTitle className={`${style.CardTitle} ${style.CardTitleRight}`}>Sport Store</CardTitle>
                                     <CardText className={style.CardText}>
-                                        Lobortis sodales auctor cras nullam eget viverra eu scelerisque. In laoreet diam volutpat viverra convallis.
-                                    </CardText>
-                                    <Button className={style.ButtonCheck}>Check Github</Button>
+                                    An e-commerce website for selling sports equipment. The project is primarily server-based, built-in ASP.NET Core and focused on IT security.                                    </CardText>
+                                    <Button className={style.ButtonCheck}><a href="https://github.com/LvMatt/SportStoreAspNet">Check Github</a></Button>
                                     </CardBody>
                                 </Col>
                                 </Row>
@@ -63,15 +62,14 @@ const Portfolio = (props) => {
                                 <Row className={style.CardLeft}>
                                 <Col lg="9">
                                 <CardBody className={`${style.CardContentSection} ${style.CardContentSectionLeft}`}>
-                                    <CardTitle className={`${style.CardTitle} ${style.CardTitleLeft}`}>Project #2</CardTitle>
+                                    <CardTitle className={`${style.CardTitle} ${style.CardTitleLeft}`}>Card reader</CardTitle>
                                     <CardText className={style.CardText}>
-                                        Lobortis sodales auctor cras nullam eget viverra eu scelerisque. In laoreet diam volutpat viverra convallis.
-                                    </CardText>
-                                    <Button className={style.ButtonCheck}>Check Github</Button>
+                                        Our team made the Card-Reader project connecting IoT with a database and frontend, which was evaluated as 'The Most Innovative Real-World Project' by the Microsoft jury.                                    </CardText>
+                                    <Button className={style.ButtonCheck}><a href="https://github.com/JSMB-Zealand">Check Github</a></Button>
                                 </CardBody>
                                 </Col>
                                 <Col className={style.PortfolioRectangleWrapper} lg="3">
-                                <div className={style.PortfolioRectangle}></div>
+                                <div className={`${style.PortfolioRectangle} ${style.ImageLeft}`}></div>
                                 </Col>
                                 </Row>
                             </Card>

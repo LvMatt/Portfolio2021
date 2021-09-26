@@ -39,11 +39,18 @@
         .PortfolioRectangle{
             padding: 100px;
             border-radius: 45px;
-            background-image: url("../../img/portfolio_pic1.PNG");
+            //background-image: url("../../img/portfolio_pic1.PNG");
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
             background-size: 100;
+        }
+        .ImageRight{
+            background-color: #89b4f8;
+        }
+        .ImageLeft{
+            background: rgb(100, 110, 253)
+
         }
 
         .CardWrapper{
@@ -64,6 +71,11 @@
 
         .CardContentSection{
             padding-top: 0;
+          
+            a{
+                text-decoration: none;
+                color:white;
+            }
             .CardTitle{
                 font-size: 36px;
                 font-weight: 800;
@@ -89,6 +101,7 @@
         .CardContentSectionLeft{
             padding-left: 200px;
             margin-right: 20px;
+            
             text-align: right;
         }
         .CardContentSectionRight{
