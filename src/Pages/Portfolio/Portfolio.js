@@ -63,7 +63,7 @@ const Portfolio = (props) => {
                                 <Col lg="9">
                                 <CardBody className={`${style.CardContentSection} ${style.CardContentSectionLeft}`}>
                                     <CardTitle className={`${style.CardTitle} ${style.CardTitleLeft}`}>Card reader</CardTitle>
-                                    <CardText className={style.CardText}>
+                                    <CardText style={{textAlign: 'left'}} className={style.CardText}>
                                         Our team made the Card-Reader project connecting IoT with a database and frontend, which was evaluated as 'The Most Innovative Real-World Project' by the Microsoft jury.                                    </CardText>
                                     <Button className={style.ButtonCheck}><a href="https://github.com/JSMB-Zealand">Check Github</a></Button>
                                 </CardBody>
